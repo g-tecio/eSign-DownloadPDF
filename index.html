@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta http-equiv = "Content-Type" content= "text/html; charset= UTF-8" />
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							
+
+							<h1>eSign</h1>
+							<p class="major">Contrato: Venta de galletas GDL "la toscanita" </p>
+								<a href="javascript:genPDF()" class="button big wide smooth-scroll-middle">Descargar</a>
+								
+							</ul>
+						</div>
+						<div class="image">
+							<img src="https://cocina-casera.com/wp-content/uploads/2017/09/galletas-limon-receta.jpg" alt="" />
+						</div>
+					</section>
+
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script type="text/javascript" src="jspdf.min.js"></script>
+			<script type="text/javascript">
+
+			function genPDF(){
+			var doc = new jsPDF ();
+	
+			doc.text(20,20, 'Contrato id: 849561685198');
+			doc.addPage();
+			doc.text(20,20, 'Juanito: 568415618');
+			doc.addPage();
+			doc.text(20,20, 'Ana:68451')
+			doc.save('Test.pdf');
+	
+				
+			}   
+		
+		</script>
+
+	</body>
+</html>
